@@ -1,0 +1,29 @@
+h2{
+    color: #5d84a1;
+}
+
+.btnSpecialistes{
+    background-color: #84aac7;
+    color: #365c79;
+    border-radius: 6px;
+    width: 300px;
+    height: 52px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tarot{
+    width: 80px;
+    width: 67px;
+    margin-top: -9px;
+    background-color: #7fa3bf;
+    clip-path: inset(13% 0 15% 0 round 0 0% 0 9%);
+}
+
+.arrow{
+    width: 50px;
+    background-color: #7fa3bf;
+    clip-path: inset(-1% 0 0% 0 round 0 19% 0 0);
+}
+
