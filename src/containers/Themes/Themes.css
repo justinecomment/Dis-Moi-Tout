@@ -1,0 +1,40 @@
+.themes{
+    background-color: #da7f9f;
+    margin-top: -20px;
+    padding-bottom:100px;
+}
+
+h2{
+    color: #9f4766;    
+}
+
+p{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 26px;
+}
+
+.themes .rond{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #bf6484;
+    box-shadow: 4px 4px #a85170;
+    margin: 12px;
+}
+
+.themes .rond p{
+    color: #fff;
+    padding-top: 25%;
+}
+
+.ensembleRonds{
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 37%;
+    justify-content: center;
+    margin: 0 auto;
+}
+

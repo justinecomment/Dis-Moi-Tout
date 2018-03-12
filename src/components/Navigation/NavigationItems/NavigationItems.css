@@ -1,0 +1,48 @@
+.NavigationItems{
+    background-color: #90b2cc;
+    padding : 10px 0px;
+    max-height: 100%;
+    max-width:100%;
+    margin: auto;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.NavigationItems li{
+    list-style-type: none;
+    margin: 0px 20px;
+    font-family:'Futura';
+    font-size: 22px;
+    flex-wrap: wrap;
+}
+
+.NavigationItems li:nth-of-type(1){
+    margin-right:auto;
+}
+
+.NavigationItems .IconDrapeau{
+    color: #fff;
+    margin : 10px 6px;
+    position:absolute;
+    font-size: 13px;
+}
+
+.NavigationItems .IconUser{
+   font-size : 25px;
+}
+
+.NavigationItems a{
+    text-decoration: none;
+    color: #657fa9;
+}
+
+.Drapeau{
+    width: 30px;
+}
+
+.Icons{
+    margin-left :auto;
+    display:inline-flex;
+    margin-right: 30px;
+}

@@ -1,0 +1,44 @@
+.specialistes{
+    background-color: #aacbe4;
+    height: 100%;
+    margin-top: -20px;
+    padding-bottom: 100px;
+}
+
+.specialistes h2{
+    color: #5d84a1;
+}
+
+.specialistes .btnSpecialistes{
+    background-color: #84aac7;
+    color: #365c79;
+    border-radius: 6px;
+    width: 25%;
+    padding: 11px -0px;
+    margin: 0 auto;
+}
+
+.specialistes .btnSpecialistes:before{
+    content: "";
+    background-size: 100% 100%;
+    position: absolute;
+    background-image: url(../../assets/images/tarot_violet.png);
+    height: 100px;
+    width: 100px;
+    margin-top: -24px;
+    background-color: #7fa3bf;
+    clip-path: inset(13% 0 15% 0 round 0 0% 0 9%);
+}
+
+.specialistes .btnSpecialistes:after{
+    content: ">";
+    text-align: center;
+    position: absolute;
+    height: 74px;
+    width: 47px;
+    margin-top: -63px;
+    margin-right: 589px;
+    right: -105px;
+    background-color: #7fa3bf;
+    clip-path: inset(-1% 0 0% 0 round 0 19% 0 0);
+}
