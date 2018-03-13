@@ -84,87 +84,6 @@
     top: -10%;
 }
 
-.header .rondNumeros{
-    background-color: #f5eded;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    position: relative;
-    top: -17%;
-}
-
-.header .numeros{
-    width: 100%;
-}
-
-.header .rondPendule{
-    background-color: #f5eded;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    left: -21%;
-    top: -89%;
-}
-
-.header .pendule{
-    width: 67%;
-    left: 17%;
-    top: 16%;
-    position: relative;
-}
-
-.header .rondMain{
-    background-color: #f5eded;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    position: relative;
-    top: -157%;
-}
-
-.header .main{
-    width: 65%;
-    position: relative;
-    left: 16%;
-    top: 12%;
-}
-
-.header .rondTarot{
-    background-color: #f5eded;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    left: 76%;
-    top: -180%;
-}
-
-.header .tarot{
-    width: 90%;
-    position: relative;
-    left: 7%;
-}
-
-.header .rondAstro{
-    background-color: #f5eded;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    left: 85%;
-    top: -170%;
-}
-
-.header .rondAstro:hover,
-.header .rondMain:hover,
-.header .rondNumeros:hover,
-.header .rondPendule:hover,
-.header .rondTarot:hover{
-    background-color: #f5d4dd;
-    cursor:pointer;
-}
-
 .header .nuage1{
     position:absolute;
 }
@@ -177,4 +96,90 @@
     width: 35%;
     position: absolute;
     bottom: 10%;
+}
+
+
+
+/********  RONDS **********/
+.header .rond{
+    background-color: #f5eded;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.grosRond{
+    background-color: #f5eded;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.petitRond{
+    background-color: #f5eded;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+
+.grosRond:hover .tooltip{
+    background-color:red;
+}
+
+.header .numeros, .header .tarot{
+    width: 80px;
+}
+.header .positionNumeros{
+    margin-top: -60px;   
+}
+
+.pendule{
+    top: 7%;
+    left: 9%;
+    width: 68px;
+    position: relative;
+}
+.header .positionPendule{
+    margin-top: -213px;
+    margin-left: -49px;
+}
+
+.main{
+    width: 60px;
+    position: relative;
+    left: 9px;
+    top: 8px;;
+}
+
+.header .positionMain{
+   margin-top:-182px;
+}
+
+.positionTarot{
+    margin-top:-80px;
+    margin-left: 230px;
+}
+
+.positionAstre{
+    margin-left: 260px;
+    margin-top: 70px;
+}
+
+.tooltip{
+    background-color: #a85e93;
+    width: 150px;
+    padding: 9px 0px;
+    text-align: center;
+    color: #fff;
+    margin-top: 36px;
+    margin-left: -154px;
+    position: absolute;
+    
+}
+
+.petitRond:hover{
+    background-color: #f5d4dd;
+    cursor: pointer;
 }

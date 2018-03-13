@@ -3,10 +3,14 @@ import React from 'react';
 import ContactItem from './ContactItem/ContactItem';
 import classes from './Contact.css';
 import Titre from '../../components/Titre/Titre';
+import Nuage from '../../assets/images/contactNuage.png';
+import ImageHeader from '../header/ImageHeader/ImageHeader';
 
 const Contact = () => {
     return (
         <div className={classes.Contact}>
+            <img src={Nuage} alt="nuage" className={classes.nuageContact}/>
+            
             <Titre color="Contact">contact</Titre>
             <p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperisaut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.</p>
             

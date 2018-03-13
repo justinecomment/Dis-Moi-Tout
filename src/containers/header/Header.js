@@ -15,43 +15,90 @@ import Main from '../../assets/images/mains.png';
 import Tarot from '../../assets/images/tarot.png';
 import Astre from '../../assets/images/astres.png';
 import PanneauBanderole from '../../assets/images/panneau_banderole.png';
+import ImageHeader from './ImageHeader/ImageHeader';
+import ImageRond from './ImageRond/ImageRond';
+import Tooltip from './ImageRond/Tooltip/Tooltip';
 
 class Header extends Component {
+  state={
+    hover: false
+  }
+
+  onHover = () => {
+    this.setState({hover : true});
+  }
+
+  offHover= () => {
+    this.setState({hover : false})
+  }
+
   render() {
     return (
-      <div className={classes.header}>
-        <div className={classes.gradient}>        
-          <img src={Montagne} className={classes.montagne} alt="montagne"/>
-          <img src={Nuage1} className={classes.nuage1} alt="nuage1"/>
+      <div className={classes.header} id="hash">
+        <div className={classes.gradient}>
+          <ImageHeader name={Montagne} style={classes.montagne} />
+          <ImageHeader name={Nuage1} style={classes.nuage1} />
 
-          
-          <img src={Terre} className={classes.terre} alt="terre"/>
-          <img src={Roulotte} className={classes.roulotte} alt="roulotte"/>
-            {/* <img src={Ombre} className="ombre" alt="ombre"/> */}
+          <ImageHeader name={Terre} style={classes.terre} />
+          <ImageHeader name={Roulotte} style={classes.roulotte} />
+          {/* <img src={Ombre} className="ombre" alt="ombre"/> */}
 
           <div className={classes.rondLogo}>
-            <img src={Logo} className={classes.logo} alt="logo"/>
-            <img src={BanderoleLogo} className={classes.banderoleLogo} alt="banderoleLogo"/>
+
+            <ImageHeader name={Logo} style={classes.logo} />
+            <ImageHeader name={BanderoleLogo} style={classes.banderoleLogo} />
             <p>BIENVENUE</p>
-            <div className={classes.rondNumeros}>
-              <img src={Numeros} className={classes.numeros} alt="numeros"/>
-            </div>
-            <div className={classes.rondPendule}>
-              <img src={Pendule} className={classes.pendule} alt="pendule"/>
-            </div>
-            <div className={classes.rondMain}>
-              <img src={Main} className={classes.main} alt="main"/>
-            </div>
-            <div className={classes.rondTarot}>
-              <img src={Tarot} className={classes.tarot} alt="tarot"/>
-            </div>
-            <div className={classes.rondAstro}>
-              <img src={Astre} className={classes.astre} alt="astre"/>
-            </div>
+
+            <ImageRond name={Numeros} 
+                style={classes.numeros} 
+                position={classes.positionNumeros} 
+                tailleRond={classes.petitRond}
+                closed={this.offHover}
+                show={this.onHover}>
+                    {this.state.hover ? <Tooltip style={classes.tooltip}>Numerologie</Tooltip> : null}
+            </ImageRond>
+
+            <ImageRond name={Pendule} 
+                style={classes.pendule} 
+                position={classes.positionPendule} 
+                tailleRond={classes.petitRond}
+                closed={this.offHover}
+                show={this.onHover}>
+                    {this.state.hover ? <Tooltip style={classes.tooltip}>Mediums</Tooltip> : null}
+            </ImageRond>
+
+            <ImageRond name={Main} 
+                style={classes.main} 
+                position={classes.positionMain} 
+                tailleRond={classes.petitRond}
+                closed={this.offHover}
+                show={this.onHover}>
+                    {this.state.hover ? <Tooltip style={classes.tooltip}>blabla</Tooltip> : null}
+            </ImageRond>
+
+            <ImageRond name={Tarot} 
+                style={classes.tarot} 
+                position={classes.positionTarot} 
+                tailleRond={classes.petitRond}
+                closed={this.offHover}
+                show={this.onHover}>
+                    {this.state.hover ? <Tooltip style={classes.tooltip}>Tarologues</Tooltip> : null}
+            </ImageRond>
+
+            <ImageRond name={Astre} 
+                style={classes.astre} 
+                position={classes.positionAstre} 
+                tailleRond={classes.petitRond}
+                closed={this.offHover}
+                show={this.onHover}>
+                    {this.state.hover ? <Tooltip style={classes.tooltip}>Astrologues</Tooltip> : null}
+            </ImageRond>
+
+
           </div>
           {/* <img src={Panneau} className="panneau" alt="panneau"/> */}
-          <img src={PanneauBanderole} className={classes.panneauBanderole} alt="panneauBanderole"/>
-         {/* <img src={Banderole} className="banderole" alt="banderole"/> */}
+          <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
+          {/* <img src={Banderole} className="banderole" alt="banderole"/> */}
 
         </div>
       </div>

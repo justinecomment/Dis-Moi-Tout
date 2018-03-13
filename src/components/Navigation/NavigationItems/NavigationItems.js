@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import classes from './NavigationItems.css';
 import NavigationItem from '../NavigationItem/NavigationItem';
 import Drapeau from '../../../assets/images/drapeau.png';
 
 
-const NavigationItems = () => (
-        <ul className={classes.NavigationItems}>
-            <NavigationItem link='/'></NavigationItem> {/**Div invisible**/}
+class NavigationItems extends Component {
+    
+    render(){
+        return(
+            <ul className={classes.NavigationItems}>
+            <NavigationItem link="/"></NavigationItem> {/**Div invisible**/}
             <NavigationItem link='/'>ACCUEIL</NavigationItem>
             <NavigationItem link='/a-propos'>A PROPOS</NavigationItem>
             <NavigationItem link='/themes'>THEMES</NavigationItem>
@@ -23,6 +26,8 @@ const NavigationItems = () => (
                 </NavigationItem>
             </div>
         </ul>
-);
+        );
+    }
+};
 
 export default NavigationItems;
