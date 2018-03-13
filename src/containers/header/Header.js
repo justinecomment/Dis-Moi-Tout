@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 import classes from './Header.css';
+import animation from '../../animation/animation.css';
 import Montagne from '../../assets/images/montagne.png'
 import Terre from '../../assets/images/terre.png';
 import Nuage1 from '../../assets/images/nuage_1.png';
 import Nuage2 from '../../assets/images/nuage_2.png';
-import Roulotte from '../../assets/images/roulotte.png';
-// import Ombre from '../../assets/images/ombre.png';
-// import Banderole from '../../assets/images/banderole.png';
+// import Roulotte from '../../assets/images/roulotte.png';
+import Roulotte from '../../assets/images/roulotte2.png';
+import Ombre from '../../assets/images/ombre.png';
 import Logo from '../../assets/images/logo.png';
 import BanderoleLogo from '../../assets/images/banderole_logo.png';
 import Numeros from '../../assets/images/numeros.png';
@@ -22,18 +23,6 @@ import Tooltip from './ImageRond/Tooltip/Tooltip';
 // import Etoile from '../../assets/images/etoile.png';
 
 class Header extends Component {
-  // state={
-  //   hover: false
-  // }
-
-  // onHover = () => {
-  //   this.setState({hover : true});
-  // }
-
-  // offHover= () => {
-  //   this.setState({hover : false})
-  // }
-
   state={
     numeros : false,
     astre: false,
@@ -86,9 +75,7 @@ class Header extends Component {
     }
   }
 
-  montrerTooltip = (elt) => {
-  }
-
+ 
   render() {
     return (
       <div className={classes.header}>
@@ -99,15 +86,12 @@ class Header extends Component {
           <ImageHeader name={Nuage2} style={classes.nuage3} />
           <ImageHeader name={Nuage1} style={classes.nuage4} />
           <ImageHeader name={Nuage2} style={classes.nuage5} />
-
           {/* <ImageHeader name={Etoile} style={classes.etoile1} /> */}
-
           <ImageHeader name={Terre} style={classes.terre} />
+          {/* <ImageHeader name={Ombre} style={classes.ombre} /> */}
           <ImageHeader name={Roulotte} style={classes.roulotte} />
-          {/* <img src={Ombre} className="ombre" alt="ombre"/> */}
 
           <div className={classes.rondLogo}>
-
             <ImageHeader name={Logo} style={classes.logo} />
             <ImageHeader name={BanderoleLogo} style={classes.banderoleLogo} />
             <p>BIENVENUE</p>
@@ -118,7 +102,7 @@ class Header extends Component {
                 tailleRond={classes.petitRond}
                 closed={()=>this.offHover('numeros')}
                 show={() => this.onHover('numeros')}>
-                    {this.state.numeros ? <Tooltip style={classes.tooltip}>Numerologie</Tooltip> : null}
+                    {this.state.numeros ? <Tooltip style={classes.tooltip}>Numérologes</Tooltip> : null}
             </ImageRond>
 
             <ImageRond name={Pendule} 
@@ -127,7 +111,7 @@ class Header extends Component {
                 tailleRond={classes.petitRond}
                 closed={()=>this.offHover('pendule')}
                 show={() => this.onHover('pendule')}>
-                    {this.state.pendule ? <Tooltip style={classes.tooltip}>Mediums</Tooltip> : null}
+                    {this.state.pendule ? <Tooltip style={classes.tooltip}>Mediums & Voyants</Tooltip> : null}
             </ImageRond>
 
             <ImageRond name={Main} 
@@ -136,7 +120,7 @@ class Header extends Component {
                 tailleRond={classes.petitRond}
                 closed={()=>this.offHover('main')}
                 show={() => this.onHover('main')}>
-                    {this.state.main ? <Tooltip style={classes.tooltip}>blabla</Tooltip> : null}
+                    {this.state.main ? <Tooltip style={classes.tooltip}>Magnétiseurs</Tooltip> : null}
             </ImageRond>
 
             <ImageRond name={Tarot} 
@@ -145,7 +129,7 @@ class Header extends Component {
                 tailleRond={classes.petitRond}
                 closed={()=>this.offHover('tarot')}
                 show={() => this.onHover('tarot')}>
-                    {this.state.tarot ? <Tooltip style={classes.tooltip}>Tarologues</Tooltip> : null}
+                    {this.state.tarot ? <Tooltip style={classes.tooltip}>Tarologues & Cartomanciens</Tooltip> : null}
             </ImageRond>
 
             <ImageRond name={Astre} 
@@ -156,12 +140,9 @@ class Header extends Component {
                 show={() => this.onHover('astre')}>
                     {this.state.astre ? <Tooltip style={classes.tooltip}>Astrologues</Tooltip> : null}
             </ImageRond>
-
           </div>
-          {/* <img src={Panneau} className="panneau" alt="panneau"/> */}
-          <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
-          {/* <img src={Banderole} className="banderole" alt="banderole"/> */}
 
+          <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
         </div>
       </div>
     );

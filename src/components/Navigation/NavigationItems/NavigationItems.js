@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import classes from './NavigationItems.css';
 import NavigationItem from '../NavigationItem/NavigationItem';
 import Drapeau from '../../../assets/images/drapeau.png';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 class NavigationItems extends Component {
@@ -12,8 +13,8 @@ class NavigationItems extends Component {
             <ul className={classes.NavigationItems}>
             <NavigationItem link="/"></NavigationItem> {/**Div invisible**/}
             <NavigationItem link='/'>ACCUEIL</NavigationItem>
-            <NavigationItem link='/a-propos'>A PROPOS</NavigationItem>
-            <NavigationItem link='/themes'>THEMES</NavigationItem>
+            <NavigationItem link='#apropos'>A PROPOS</NavigationItem>
+            <NavigationItem link='/#themes'>THEMES</NavigationItem>
             <NavigationItem link='/specialistes'>SPECIALISTES</NavigationItem>
             <NavigationItem link='/contact'>CONTACT</NavigationItem>
             <div className={classes.Icons}>

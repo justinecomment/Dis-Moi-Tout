@@ -9,6 +9,7 @@
     padding: 7px 35px;
     margin: 10px;
     border-radius: 5px;
+    font-family: 'Futura' , 'sans-serif' !important;
 }
 .button:hover{
     background-color: #a144de;
