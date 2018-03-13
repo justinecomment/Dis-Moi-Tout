@@ -1,0 +1,10 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;    
+    width: 50%;
+}
+
+.Contact p{
+    text-align: center;
+}

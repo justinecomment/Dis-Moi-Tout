@@ -1,0 +1,25 @@
+.Title{
+    color: #bf6b52;
+    font-family: 'Futura';
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom:20px;
+    text-transform: uppercase;
+    font-family : "Futura";
+}
+
+.Title .Apropos{
+    color: #bf6b52;
+}
+
+.Title .Theme{
+    color: #9f4766;
+}
+
+.Title .Specialistes{
+    color: #5d84a1;
+}
+
+.Title .Contact{
+    color: #5d4c6d;
+}

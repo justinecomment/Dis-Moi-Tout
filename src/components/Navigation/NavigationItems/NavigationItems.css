@@ -1,6 +1,6 @@
 .NavigationItems{
     background-color: #90b2cc;
-    padding : 10px 0px;
+    /* padding : 10px 0px; */
     max-height: 100%;
     max-width:100%;
     margin: auto;
@@ -11,10 +11,18 @@
 
 .NavigationItems li{
     list-style-type: none;
-    margin: 0px 20px;
     font-family:'Futura';
     font-size: 22px;
     flex-wrap: wrap;
+    padding: 15px 25px;
+}
+
+.NavigationItems li:hover{
+    background-color: #6692b5;
+    padding: 15px 25px;
+}
+.NavigationItems li a:hover{
+    color:#24547a;
 }
 
 .NavigationItems li:nth-of-type(1){

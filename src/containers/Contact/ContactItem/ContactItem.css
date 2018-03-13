@@ -1,0 +1,26 @@
+.Article .Rond{
+    background-color: #bc3c68;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom:15px;
+}
+
+.Article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.Article:last-child{
+    margin-bottom:200px;
+}
+
+.Article span{
+    color: #fff;
+    font-size: 32px;
+    margin: 11px 11px;
+    position: absolute;
+}

@@ -7,13 +7,14 @@ import Pendule from '../../assets/images/violet/pendule_violet.png';
 import Main from '../../assets/images/violet/mains_violet.png';
 import Astre from '../../assets/images/violet/astre_violet.png';
 import Numeros from '../../assets/images/violet/numeros_violet.png';
+import Titre from '../../components/Titre/Titre';
 
 
 class Specialistes extends Component {
     render() {
         return (
             <div className={classes.specialistes}>
-                <h2>SPECIALISTES</h2>
+                <Titre color="Specialistes">specialistes</Titre>
                 <SpecialistesItem icon={Tarot}>Tarologues & Cartomanciens</SpecialistesItem>
                 <SpecialistesItem icon={Pendule}>Mediums & Voyants</SpecialistesItem>
                 <SpecialistesItem icon={Astre}>Astrologues</SpecialistesItem>

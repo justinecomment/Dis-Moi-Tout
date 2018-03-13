@@ -5,8 +5,8 @@ import Arrow from '../../../assets/images/arrow.png';
 
 const SpecialistesItem = (props) => {
     return (
-        <div className={classes.btnSpecialistes}>
-            <div><img src={props.icon} alt="icon" className={classes.tarot} /></div>
+        <div className={classes.SpecialistesItem}>
+            <div><img src={props.icon} alt="icon" className={classes.type} /></div>
             <p>{props.children}</p>
             <div><img src={Arrow} alt="icon" className={classes.arrow} /></div>
         </div>

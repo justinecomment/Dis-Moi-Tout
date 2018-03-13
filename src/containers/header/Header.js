@@ -22,6 +22,8 @@ class Header extends Component {
       <div className={classes.header}>
         <div className={classes.gradient}>        
           <img src={Montagne} className={classes.montagne} alt="montagne"/>
+          <img src={Nuage1} className={classes.nuage1} alt="nuage1"/>
+
           
           <img src={Terre} className={classes.terre} alt="terre"/>
           <img src={Roulotte} className={classes.roulotte} alt="roulotte"/>
@@ -49,7 +51,6 @@ class Header extends Component {
           </div>
           {/* <img src={Panneau} className="panneau" alt="panneau"/> */}
           <img src={PanneauBanderole} className={classes.panneauBanderole} alt="panneauBanderole"/>
-          <img src={Nuage1} className={classes.nuage1} alt="nuage1"/>
          {/* <img src={Banderole} className="banderole" alt="banderole"/> */}
 
         </div>

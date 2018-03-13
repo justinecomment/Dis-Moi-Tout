@@ -1,8 +1,4 @@
-h2{
-    color: #5d84a1;
-}
-
-.btnSpecialistes{
+.SpecialistesItem{
     background-color: #84aac7;
     color: #365c79;
     border-radius: 6px;
@@ -13,7 +9,18 @@ h2{
     margin-bottom: 20px;
 }
 
-.tarot{
+.SpecialistesItem:hover{
+    background-color: #6e8ea7;
+    cursor:pointer;
+    color: #375c79;
+}
+
+.SpecialistesItem:hover .type,
+.SpecialistesItem:hover .arrow{
+    background-color:#64829a;
+}
+
+.SpecialistesItem .type{
     width: 80px;
     width: 67px;
     margin-top: -9px;
@@ -21,9 +28,14 @@ h2{
     clip-path: inset(13% 0 15% 0 round 0 0% 0 9%);
 }
 
-.arrow{
+.SpecialistesItem .arrow{
     width: 50px;
     background-color: #7fa3bf;
     clip-path: inset(-1% 0 0% 0 round 0 19% 0 0);
+}
+
+.SpecialistesItem p{
+    width: 200px;
+    font-family: 'Futura';
 }
 

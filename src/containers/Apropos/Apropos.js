@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 
 import classes from './Apropos.css';
 import Oeil from '../../assets/images/oeilTriangle.png';
+import Titre from '../../components/Titre/Titre';
 
 class Apropos extends Component {
   render() {
     return (
         <div className={classes.apropos}>
-        <h2>A PROPOS</h2>
+        <Titre color="Apropos">a propos</Titre>
         <div className={classes.image}>
           <img src={Oeil} alt="oeil" className={classes.oeil} />
         </div>
