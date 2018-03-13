@@ -32,7 +32,7 @@ const Input = (props) => {
     }
 
     return (
-        <div>
+        <div className={classes.allInput}>
             {input}
             {validationError}
         </div>

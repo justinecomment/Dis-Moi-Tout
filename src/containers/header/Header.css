@@ -25,12 +25,45 @@
 }
 
 .header .nuage1{
+    width: 180px;
+    top: 18%;
+    left: 12%;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.header .nuage2{
     width: 200px;
-    top: 100px;
-    left: 100px;
-    position: fixed;
+    top: 11%;
+    left: 19%;
+    position: absolute;
     opacity: 0.4;
 }
+
+.header .nuage3{
+    width: 100px;
+    top: 28%;
+    left: 25%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.header .nuage4{
+    width: 150px;
+    top: 6%;
+    right: 3%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.header .nuage5{
+    width: 120px;
+    top: 6%;
+    right: 22%;
+    position: absolute;
+    opacity: 0.4;
+}
+
 
 .header .roulotte{
     width: 20%;

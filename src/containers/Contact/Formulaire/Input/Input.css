@@ -12,3 +12,8 @@
 .errorText{
     color: red;
 }
+
+.allInput{
+    width: 200px;
+    margin: auto;
+}

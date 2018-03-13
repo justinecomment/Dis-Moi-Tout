@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     margin: auto;    
-    /* width: 50%; */
 }
 
 .Contact p{
@@ -14,7 +13,7 @@
    margin-top: -20%;
 }
 
-.Contact div{
+.Contact > div:nth-of-type(1){
     width: 50%;
     margin: auto;
 }

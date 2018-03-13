@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Input from './Input/Input';
 import classes from './Formulaire.css';
+import Button from '../../../components/Button/Button';
 
 
 class Formulaire extends Component{
@@ -12,13 +13,11 @@ class Formulaire extends Component{
                 value : '',
                 config:{
                     placeholder: "Votre email",
-                    type: 'text'
+                    type: 'email'
                 },
                 inputType: 'input',
                 validation:{
                     required : true,
-                    minLength : 2,
-                    maxLength : 2
                 },
                 valid : false,
                 touched : false
@@ -101,7 +100,7 @@ class Formulaire extends Component{
                     touched ={f.inpuType.touched}
                     changed={(event) => this.handleChange(event, f.id)} />
                 ))}
-                <button className={classes.button} disabled={!this.state.formIsValid}>valider</button>
+                <Button disabled={!this.state.formIsValid}>Se Connecter</Button>
             </form>
         );
     

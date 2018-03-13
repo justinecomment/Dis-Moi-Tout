@@ -5,7 +5,11 @@ class ImageRond extends Component {
     render() {    
         return (
             <section className={this.props.position} onMouseOver={this.props.show} onMouseLeave={this.props.closed}>
+                
+                <div className={this.props.wrapper}>
                 <div>{this.props.children}</div>
+                </div>
+
 
                 <div className={this.props.tailleRond}>
                     <img src={this.props.name} className={this.props.style} alt={this.props.name} />

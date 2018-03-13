@@ -1,13 +1,14 @@
 .form{
-    margin: 0 auto;
-    width: 50%;
     text-align: center;   
     margin-top: 40px;
-    margin-bottom: 100px;
+    background-color: #9897ff;
+    padding: 54px;
 }
 
 .form input{
     margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
 }
 
 .form button{
@@ -21,7 +22,7 @@ p{
 
 .form .button{
     padding: 5px 10px;
-    background-color: #68d4fb;
+    background-color: #b44ef7;
     border: 1px solid rgb(191, 191, 191);
     color: #fff;
     outline: none;

@@ -28,8 +28,9 @@ const Contact = () => {
                     Victus universis caro ferina est lacdans copia qua sustentantur, et per aucupium possint,idimus frumenti usum et vini penitus ignorantes.
                 </ContactItem>
 
-                <Formulaire />
+                
             </div>
+            <Formulaire />
        </div>
     );
 
