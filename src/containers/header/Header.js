@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 
 import classes from './Header.css';
-import animation from '../../animation/animation.css';
 import Montagne from '../../assets/images/montagne.png'
 import Terre from '../../assets/images/terre.png';
 import Nuage1 from '../../assets/images/nuage_1.png';
 import Nuage2 from '../../assets/images/nuage_2.png';
 import Roulotte from '../../assets/images/roulotte2.png';
 import Banderole from '../../assets/images/banderole.png';
-import Ombre from '../../assets/images/ombre.png';
 import Logo from '../../assets/images/logo.png';
 import BanderoleLogo from '../../assets/images/banderole_logo.png';
 import Numeros from '../../assets/images/numeros.png';

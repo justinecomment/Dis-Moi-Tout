@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import classes from './NavigationItems.css';
 import NavigationItem from '../NavigationItem/NavigationItem';
 import Drapeau from '../../../assets/images/drapeau.png';
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 class NavigationItems extends Component {
