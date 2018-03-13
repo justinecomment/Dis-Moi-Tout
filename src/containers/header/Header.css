@@ -80,9 +80,10 @@
 }
 
 .header .banderole{
-    width: 100%;
-    position: fixed;
-    top: 70%;
+    width: 46%;
+    right: 0%;
+    position: absolute;
+    bottom: 0%;
 }
 
 .header .rondLogo{
@@ -137,9 +138,9 @@
 }
 
 .header .panneauBanderole{
-    width: 35%;
+    width: 44%;
     position: absolute;
-    bottom: 10%;
+    bottom: 0%;
 }
 
 

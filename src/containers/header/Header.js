@@ -6,8 +6,8 @@ import Montagne from '../../assets/images/montagne.png'
 import Terre from '../../assets/images/terre.png';
 import Nuage1 from '../../assets/images/nuage_1.png';
 import Nuage2 from '../../assets/images/nuage_2.png';
-// import Roulotte from '../../assets/images/roulotte.png';
 import Roulotte from '../../assets/images/roulotte2.png';
+import Banderole from '../../assets/images/banderole.png';
 import Ombre from '../../assets/images/ombre.png';
 import Logo from '../../assets/images/logo.png';
 import BanderoleLogo from '../../assets/images/banderole_logo.png';
@@ -88,7 +88,8 @@ class Header extends Component {
           <ImageHeader name={Nuage2} style={classes.nuage5} />
           {/* <ImageHeader name={Etoile} style={classes.etoile1} /> */}
           <ImageHeader name={Terre} style={classes.terre} />
-          {/* <ImageHeader name={Ombre} style={classes.ombre} /> */}
+          <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
+          <ImageHeader name={Banderole} style={classes.banderole} />
           <ImageHeader name={Roulotte} style={classes.roulotte} />
 
           <div className={classes.rondLogo}>
@@ -142,7 +143,6 @@ class Header extends Component {
             </ImageRond>
           </div>
 
-          <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
         </div>
       </div>
     );
