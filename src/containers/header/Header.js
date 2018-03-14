@@ -21,8 +21,8 @@ import Tooltip from './ImageRond/Tooltip/Tooltip';
 // import Etoile from '../../assets/images/etoile.png';
 
 class Header extends Component {
-  state={
-    numeros : false,
+  state = {
+    numeros: false,
     astre: false,
     tarot: false,
     pendule: false,
@@ -30,50 +30,50 @@ class Header extends Component {
   }
 
   onHover = (cible) => {
-    switch (cible){
-      case( 'numeros'):
-      this.setState({numeros : true});
+    switch (cible) {
+      case ('numeros'):
+        this.setState({ numeros: true });
         break;
-        case ('pendule'):
-        this.setState({pendule : true});
+      case ('pendule'):
+        this.setState({ pendule: true });
         break;
-        case ('tarot'):
-        this.setState({tarot : true});
+      case ('tarot'):
+        this.setState({ tarot: true });
         break;
-        case ('astre'):
-        this.setState({astre : true});
+      case ('astre'):
+        this.setState({ astre: true });
         break;
-        case ('main'):
-        this.setState({main : true});
+      case ('main'):
+        this.setState({ main: true });
         break;
       default:
-      break;
+        break;
     }
   }
 
-  offHover= (cible) => {
-    switch (cible){
-      case( 'numeros'):
-      this.setState({numeros : false});
+  offHover = (cible) => {
+    switch (cible) {
+      case ('numeros'):
+        this.setState({ numeros: false });
         break;
-        case ('pendule'):
-        this.setState({pendule : false});
+      case ('pendule'):
+        this.setState({ pendule: false });
         break;
-        case ('tarot'):
-        this.setState({tarot : false});
+      case ('tarot'):
+        this.setState({ tarot: false });
         break;
-        case ('astre'):
-        this.setState({astre : false});
+      case ('astre'):
+        this.setState({ astre: false });
         break;
-        case ('main'):
-        this.setState({main : false});
+      case ('main'):
+        this.setState({ main: false });
         break;
       default:
-      break;
+        break;
     }
   }
 
- 
+
   render() {
     return (
       <div className={classes.header}>
@@ -89,55 +89,70 @@ class Header extends Component {
           <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
           <ImageHeader name={Banderole} style={classes.banderole} />
           <ImageHeader name={Roulotte} style={classes.roulotte} />
+          <div className={classes.fumee}></div>
+
+          <div className={classes.smoke}>
+            <span className={classes.s0}></span>
+            <span className={classes.s1}></span>
+            <span className={classes.s2}></span>
+            <span className={classes.s3}></span>
+            <span className={classes.s4}></span>
+            <span className={classes.s5}></span>
+            <span className={classes.s6}></span>
+            <span className={classes.s7}></span>
+            <span className={classes.s8}></span>
+            <span className={classes.s9}></span>
+          </div>
+
 
           <div className={classes.rondLogo}>
             <ImageHeader name={Logo} style={classes.logo} />
             <ImageHeader name={BanderoleLogo} style={classes.banderoleLogo} />
             <p>BIENVENUE</p>
 
-            <ImageRond name={Numeros} 
-                style={classes.numeros} 
-                position={classes.positionNumeros} 
-                tailleRond={classes.petitRond}
-                closed={()=>this.offHover('numeros')}
-                show={() => this.onHover('numeros')}>
-                    {this.state.numeros ? <Tooltip style={classes.tooltip}>Numérologes</Tooltip> : null}
+            <ImageRond name={Numeros}
+              style={classes.numeros}
+              position={classes.positionNumeros}
+              tailleRond={classes.petitRond}
+              closed={() => this.offHover('numeros')}
+              show={() => this.onHover('numeros')}>
+              {this.state.numeros ? <Tooltip style={classes.tooltip}>Numérologes</Tooltip> : null}
             </ImageRond>
 
-            <ImageRond name={Pendule} 
-                style={classes.pendule} 
-                position={classes.positionPendule} 
-                tailleRond={classes.petitRond}
-                closed={()=>this.offHover('pendule')}
-                show={() => this.onHover('pendule')}>
-                    {this.state.pendule ? <Tooltip style={classes.tooltip}>Mediums & Voyants</Tooltip> : null}
+            <ImageRond name={Pendule}
+              style={classes.pendule}
+              position={classes.positionPendule}
+              tailleRond={classes.petitRond}
+              closed={() => this.offHover('pendule')}
+              show={() => this.onHover('pendule')}>
+              {this.state.pendule ? <Tooltip style={classes.tooltip}>Mediums & Voyants</Tooltip> : null}
             </ImageRond>
 
-            <ImageRond name={Main} 
-                style={classes.main} 
-                position={classes.positionMain} 
-                tailleRond={classes.petitRond}
-                closed={()=>this.offHover('main')}
-                show={() => this.onHover('main')}>
-                    {this.state.main ? <Tooltip style={classes.tooltip}>Magnétiseurs</Tooltip> : null}
+            <ImageRond name={Main}
+              style={classes.main}
+              position={classes.positionMain}
+              tailleRond={classes.petitRond}
+              closed={() => this.offHover('main')}
+              show={() => this.onHover('main')}>
+              {this.state.main ? <Tooltip style={classes.tooltip}>Magnétiseurs</Tooltip> : null}
             </ImageRond>
 
-            <ImageRond name={Tarot} 
-                style={classes.tarot} 
-                position={classes.positionTarot} 
-                tailleRond={classes.petitRond}
-                closed={()=>this.offHover('tarot')}
-                show={() => this.onHover('tarot')}>
-                    {this.state.tarot ? <Tooltip style={classes.tooltip}>Tarologues & Cartomanciens</Tooltip> : null}
+            <ImageRond name={Tarot}
+              style={classes.tarot}
+              position={classes.positionTarot}
+              tailleRond={classes.petitRond}
+              closed={() => this.offHover('tarot')}
+              show={() => this.onHover('tarot')}>
+              {this.state.tarot ? <Tooltip style={classes.tooltip}>Tarologues & Cartomanciens</Tooltip> : null}
             </ImageRond>
 
-            <ImageRond name={Astre} 
-                style={classes.astre} 
-                position={classes.positionAstre} 
-                tailleRond={classes.petitRond}
-                closed={()=>this.offHover('astre')}
-                show={() => this.onHover('astre')}>
-                    {this.state.astre ? <Tooltip style={classes.tooltip}>Astrologues</Tooltip> : null}
+            <ImageRond name={Astre}
+              style={classes.astre}
+              position={classes.positionAstre}
+              tailleRond={classes.petitRond}
+              closed={() => this.offHover('astre')}
+              show={() => this.onHover('astre')}>
+              {this.state.astre ? <Tooltip style={classes.tooltip}>Astrologues</Tooltip> : null}
             </ImageRond>
           </div>
 
