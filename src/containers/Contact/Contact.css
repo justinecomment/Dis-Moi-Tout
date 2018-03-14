@@ -9,8 +9,9 @@
 }
 
 .Contact .nuageContact{
-   width:100%;
-   margin-top: -17%;
+    width: 100%;
+    margin-top: -19%;
+    position: absolute;
 }
 
 .Contact > div:nth-of-type(1){

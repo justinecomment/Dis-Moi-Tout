@@ -307,7 +307,6 @@
 
 .header .logo{
     width: 60%;
-    top: 20%;
     left: 18%;
     position: relative;
     padding-top: 17%;
@@ -334,7 +333,6 @@
 
 .header .banderoleLogo{
     width: 69%;
-    top: 20%;
     left: 15%;
     position: relative;
     opacity: 0;
