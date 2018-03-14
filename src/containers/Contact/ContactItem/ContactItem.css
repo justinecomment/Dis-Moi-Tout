@@ -4,6 +4,9 @@
     height: 60px;
     border-radius: 50%;
     margin-bottom:15px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
 }
 
 .Article{
@@ -21,6 +24,4 @@
 .Article span{
     color: #fff;
     font-size: 32px;
-    margin: 11px 11px;
-    position: absolute;
 }

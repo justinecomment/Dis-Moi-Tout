@@ -1,10 +1,15 @@
 .specialistes{
     background-color: #aacbe4;
-    padding-bottom: 140px;
+    padding-bottom: 240px;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.specialistes p{
+    font-family: 'Futura';
+    margin-top: 16px;
 }
 
 

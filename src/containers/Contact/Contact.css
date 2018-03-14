@@ -10,10 +10,18 @@
 
 .Contact .nuageContact{
    width:100%;
-   margin-top: -20%;
+   margin-top: -17%;
 }
 
 .Contact > div:nth-of-type(1){
     width: 50%;
     margin: auto;
+}
+
+.Contact h3 {
+    text-align: center;
+    background-color: #9897ff;
+    padding-top: 29px;
+    margin: 0;
+    color: #6d4778;
 }

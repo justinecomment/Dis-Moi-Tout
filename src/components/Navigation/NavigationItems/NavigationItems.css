@@ -15,6 +15,7 @@
     font-size: 22px;
     flex-wrap: wrap;
     padding: 15px 25px;
+    z-index:200;
 }
 
 .NavigationItems li:hover{

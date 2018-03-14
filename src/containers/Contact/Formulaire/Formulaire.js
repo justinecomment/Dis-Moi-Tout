@@ -63,6 +63,9 @@ class Formulaire extends Component{
         for (let inputType in this.state.form){
             formData[inputType] = this.state.form[inputType].value
         }
+        console.log(this)
+        window.location= '//http://checkout-test.tlmq.fr/#/' ;
+        // this.props.history.push('//google.com');
         console.log(formData);
     }
 
@@ -106,6 +109,7 @@ class Formulaire extends Component{
     
         return (
             <div>
+                <h3>Accéder au Tchat</h3>
                 {form}
             </div>
         );

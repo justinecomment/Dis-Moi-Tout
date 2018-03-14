@@ -21,6 +21,8 @@
     background-color: #bf6484;
     box-shadow: 4px 4px #a85170;
     margin: 12px;
+    display: flex;
+    align-items: center;
 }
 
 .themes .rond:hover{
@@ -31,7 +33,6 @@
 
 .themes .rond p{
     color: #fff;
-    padding-top: 25%;
 }
 
 .themes .ensembleRonds{

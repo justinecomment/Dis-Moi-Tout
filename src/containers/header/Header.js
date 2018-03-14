@@ -118,7 +118,7 @@ class Header extends Component {
               tailleRond={classes.petitRond}
               closed={() => this.offHover('numeros')}
               show={() => this.onHover('numeros')}>
-              {this.state.numeros ? <Tooltip style={classes.tooltip}>Numérologes</Tooltip> : null}
+              {this.state.numeros ? <Tooltip style={classes.tooltip}>Numérologues</Tooltip> : null}
             </ImageRond>
 
             <ImageRond name={Pendule}

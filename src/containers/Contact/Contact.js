@@ -27,8 +27,6 @@ const Contact = () => {
                     Accéder à notre formulaire de contact
                     Victus universis caro ferina est lacdans copia qua sustentantur, et per aucupium possint,idimus frumenti usum et vini penitus ignorantes.
                 </ContactItem>
-
-                
             </div>
             <Formulaire />
        </div>
