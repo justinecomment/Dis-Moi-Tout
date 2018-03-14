@@ -19,7 +19,7 @@
 
 .header .fleche{
     position: absolute;
-    bottom: 7%;
+    bottom: 0%;
     font-size: 20px;
     color: #fff;
     left: 50%;
@@ -83,7 +83,7 @@
     left: 19%;
     position: absolute;
     opacity: 0.4;
-    animation: slide-rightt 15s 0s linear infinite;
+    animation: slide-rightt 10s 0s linear infinite;
 }
 
 @keyframes slide-rightt {
@@ -108,7 +108,7 @@
     left: 25%;
     position: absolute;
     opacity: 0.4;
-    animation: slide-righttt 20s 0s linear infinite;
+    animation: slide-righttt 17s 0s linear infinite;
 }
 @keyframes slide-righttt {
     0% {
@@ -129,11 +129,11 @@
 
 .header .nuage4{
     width: 150px;
-    top: 6%;
+    top: 12%;
     right: 3%;
     position: absolute;
     opacity: 0.4;
-    animation: slide-rightt 23s 0s linear infinite;
+    animation: slide-rightt 20s 0s linear infinite;
 
 }
 
@@ -246,8 +246,8 @@
     position: absolute;
     z-index: 0;
     width: 1px;
-    left: 52%;
-    bottom: 0%;
+    left: 52.5%;
+    bottom: 0.6%;
     margin-bottom: 23%;
     z-index:0;
   }
@@ -283,10 +283,10 @@
 
   @keyframes smokeS {
     0%   { opacity: 0.1;   transform: scale(0.2)     translate(0, 0) }
-    10%  { opacity: 1;   transform: scale(0.2)   translate(0, -50px) }
+    10%  { opacity: 1;   transform: scale(0.2)       translate(0, -50px) }
     80%  { opacity: 0.9;   transform: scale(0.2)     translate(10, -70px) }
     95%  { opacity: 0.2;   transform: scale(0.2)     translate(10, -70px) }
-    100% { opacity: 0;     transform: scale(5)       translate(-5px, -80px) }
+    100% { opacity: 0;     transform: scale(5)       translate(-5px, -70px) }
 }
   
   .smoke .s0 { animation: smokeL 9s 0s infinite }
@@ -488,7 +488,7 @@
     margin-left: -154px;
     position: absolute;
     border-radius: 3px;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .petitRond:hover{
