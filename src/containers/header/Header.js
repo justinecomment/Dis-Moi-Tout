@@ -88,6 +88,7 @@ class Header extends Component {
           <ImageHeader name={Etoile} style={classes.etoile2} />
           <ImageHeader name={Etoile} style={classes.etoile3} />
           <ImageHeader name={Terre} style={classes.terre} />
+          <span className={classes.fleche}><i className="fas fa-angle-down"></i></span>
           <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
           <ImageHeader name={Banderole} style={classes.banderole} />
           <ImageHeader name={Roulotte} style={classes.roulotte} />
