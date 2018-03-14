@@ -89,7 +89,6 @@ class Header extends Component {
           <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
           <ImageHeader name={Banderole} style={classes.banderole} />
           <ImageHeader name={Roulotte} style={classes.roulotte} />
-          <div className={classes.fumee}></div>
 
           <div className={classes.smoke}>
             <span className={classes.s0}></span>
@@ -102,15 +101,15 @@ class Header extends Component {
             <span className={classes.s7}></span>
             <span className={classes.s8}></span>
             <span className={classes.s9}></span>
+            <span className={classes.s10}></span>
           </div>
-
 
           <div className={classes.rondLogo}>
             <ImageHeader name={Logo} style={classes.logo} />
             <ImageHeader name={BanderoleLogo} style={classes.banderoleLogo} />
-            <p>BIENVENUE</p>
+            <p className={classes.bienvenu}>BIENVENUE</p>
 
-            <ImageRond name={Numeros}
+             <ImageRond name={Numeros}
               style={classes.numeros}
               position={classes.positionNumeros}
               tailleRond={classes.petitRond}
