@@ -18,7 +18,7 @@ import PanneauBanderole from '../../assets/images/panneau_banderole.png';
 import ImageHeader from './ImageHeader/ImageHeader';
 import ImageRond from './ImageRond/ImageRond';
 import Tooltip from './ImageRond/Tooltip/Tooltip';
-// import Etoile from '../../assets/images/etoile.png';
+import Etoile from '../../assets/images/etoile.png';
 
 class Header extends Component {
   state = {
@@ -84,7 +84,9 @@ class Header extends Component {
           <ImageHeader name={Nuage2} style={classes.nuage3} />
           <ImageHeader name={Nuage1} style={classes.nuage4} />
           <ImageHeader name={Nuage2} style={classes.nuage5} />
-          {/* <ImageHeader name={Etoile} style={classes.etoile1} /> */}
+          <ImageHeader name={Etoile} style={classes.etoile1} />
+          <ImageHeader name={Etoile} style={classes.etoile2} />
+          <ImageHeader name={Etoile} style={classes.etoile3} />
           <ImageHeader name={Terre} style={classes.terre} />
           <ImageHeader name={PanneauBanderole} style={classes.panneauBanderole} />
           <ImageHeader name={Banderole} style={classes.banderole} />
